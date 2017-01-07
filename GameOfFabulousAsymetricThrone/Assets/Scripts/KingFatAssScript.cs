@@ -13,6 +13,7 @@ public class KingFatAssScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        //if(transform.rotation.eulerAngles.x ­ 180)
         transform.RotateAround(transform.position, horizontalAxis, 0.1f * Time.deltaTime + transform.rotation.eulerAngles.x/180);
         transform.RotateAround(transform.position, verticalAxis, 0.1f * Time.deltaTime + transform.rotation.eulerAngles.y/180);
 
